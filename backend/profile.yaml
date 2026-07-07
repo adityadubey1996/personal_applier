@@ -1,0 +1,289 @@
+answer_bank: []
+basics:
+  email: adityadubey1966@gmail.com
+  first_name: Aditya
+  label: Backend-leaning Full-Stack Engineer
+  last_name: Dubey
+  location:
+    address_line1: Sompura Gate, Sarjapura Road
+    city: Bengaluru
+    country: India
+    countryCode: IN
+    postalCode: '560102'
+    region: Karnataka
+  name: Aditya Dubey
+  phone: +91-9176031690
+  preferred_name: Aditya
+  profiles:
+  - network: LinkedIn
+    url: https://www.linkedin.com/in/aditya-dubey-117380146/
+  - network: GitHub
+    url: https://github.com/adityadubey1996
+  - network: Portfolio
+    url: https://adityadubey.dev
+  summary: 'Backend-leaning Full-Stack Engineer with 6+ years building production
+    systems across Kotlin (JVM/Android), Ruby on Rails, and AWS. Comfortable owning
+    services end-to-end — API design, data modelling, deployment on EC2/ECS/Lambda,
+    and on-call. Track record of leading and growing engineering teams (scaled one
+    from 3 to 14 as Tech Lead) and mentoring engineers into independent contributors.
+    Strong working knowledge of distributed systems, RESTful and GraphQL APIs, relational
+    data (PostgreSQL, MySQL), background job processing (Sidekiq, SQS), and CI/CD
+    on Jenkins and GitHub Actions.
+
+    '
+  url: https://www.linkedin.com/in/aditya-dubey-117380146/
+demographics:
+  disability_status: Decline to self-identify
+  gender: Decline to self-identify
+  race_ethnicity: Decline to self-identify
+  veteran_status: Decline to self-identify
+education:
+- area: Appropriate Technology and Entrepreneurship Practices
+  endDate: 2019-09
+  institution: National Institute of Technology
+  startDate: 2017-09
+  studyType: M.Tech
+- area: Civil Engineering
+  endDate: 2017-09
+  institution: Vellore Institute of Technology
+  startDate: 2014-09
+  studyType: B.Tech
+files:
+- filename: resume.pdf
+  path: ''
+  type: resume
+- filename: ''
+  path: ''
+  type: cover_letter
+learned_answers:
+  are you comfortable with the bangalore location: 'yes'
+  are you legally authorized to work in india: '4'
+  are you willing to relocate to abu dhabi uae: 'yes'
+  are you willing to take a drug test in accordance with local law regulations: 'yes'
+  do you have solid understanding of the v model software development lifecycle: 'yes'
+  do you thorough understanding of rtca do 178c software certification standards: 'yes'
+  easy apply button: 'yes'
+  how many years of work experience do you have with fullstack developer: '7'
+  how many years of work experience do you have with google cloud platform gcp: '6'
+  how many years of work experience do you have with java: '4'
+  how many years of work experience do you have with net framework: '4'
+  how many years of work experience do you have with node js: '7'
+  how many years of work experience do you have with react js: '7'
+  how many years of work experience do you have with representational state transfer rest: '7'
+  preferred location: bengaluru
+  within how many days can you join: '30'
+meta:
+  owner: aditya
+  schema: jsonresume+ats-ext/v1
+  updated: '2026-06-21'
+preferences:
+  current_ctc: ₹30 LPA
+  earliest_start_date: ''
+  expected_ctc: ₹50 LPA
+  notice_period_days: 40
+  preferred_locations:
+  - Bengaluru
+  - Remote
+  remote_preference: Hybrid, Remote
+  salary_expectation: ₹50 LPA
+  willing_to_relocate: null
+skill_years:
+  android: 3
+  aws: 4
+  docker: 4
+  graphql: 4
+  java: 3
+  javascript: 6
+  kotlin: 4
+  kubernetes: 2
+  mysql: 5
+  next.js: 3
+  postgresql: 5
+  python: 6
+  react: 4
+  ruby: 4
+  ruby on rails: 4
+  sidekiq: 3
+  total_years: 6
+  typescript: 5
+skills:
+  ai:
+  - LangChain
+  - LangGraph
+  - Pydantic-AI
+  - RAG
+  - HuggingFace Whisper
+  - Chroma
+  - Qdrant
+  - Neo4j
+  - Groq
+  aws:
+  - EC2
+  - ECS
+  - Lambda
+  - S3
+  - RDS
+  - DynamoDB
+  - SQS
+  - SNS
+  - Cognito
+  - CloudWatch
+  - IAM
+  - OpenSearch
+  - CloudFront
+  backend:
+  - Ruby on Rails
+  - Sidekiq
+  - ActiveRecord
+  - Spring Boot
+  - Ktor
+  - Rack
+  - REST
+  - GraphQL
+  - gRPC
+  data:
+  - PostgreSQL
+  - MySQL
+  - Redis
+  - Elasticsearch
+  - MongoDB
+  - Kafka
+  devops:
+  - Docker
+  - Kubernetes
+  - Jenkins
+  - GitHub Actions
+  - Terraform
+  - Datadog
+  - Grafana
+  frontend:
+  - React
+  - Next.js
+  - Tailwind CSS
+  languages:
+  - Kotlin
+  - Ruby
+  - Java
+  - Python
+  - JavaScript
+  - TypeScript
+  - SQL
+  leadership:
+  - Hiring
+  - Interviewing
+  - Sprint Planning
+  - Code Review
+  - Mentoring
+  - On-call
+  - Stakeholder Communication
+  mobile_jvm:
+  - Kotlin Android
+  - Coroutines
+  - Jetpack
+  - Android SDK
+  - Gradle
+  - JUnit
+  - Kotest
+work:
+- company: Jove Labs
+  endDate: present
+  highlights:
+  - Built JVM services on AWS (ECS + RDS PostgreSQL + SQS); upgraded FOP 1.1 -> 2.1,
+    cutting PDF pipeline time 20%.
+  - Designed unified marketing data platform on AWS OpenSearch + SQS, syncing 5+ upstream
+    sources (+25% data-driven decisions).
+  - Led consolidation of three production DBs into single PostgreSQL schema (-30%
+    redundancy, +25% accuracy).
+  - Owned end-to-end data migration with idempotent ETL jobs (99.9% integrity across
+    cutovers).
+  - Built internal SSR-ready UI library consumed by 4+ teams (+30% shared-component
+    reuse and velocity).
+  location: Bengaluru, India
+  position: Software Engineer
+  startDate: 2025-05
+- company: Optimal Virtual Employee
+  endDate: 2025-03
+  highlights:
+  - Senior engineer on Go-Collect CRM (Bingo Industries); owned reliability, performance
+    and feature delivery.
+  - URL-parameter-driven CRM prefill integration; cut operator data-entry errors and
+    reduced training time.
+  - Re-architected GraphQL from nested queries to view-based composition; materially
+    improved page load times.
+  - API-key rotation service (10+ OpenAI/Groq keys, autoscaling, Grafana); 3x throughput,
+    eliminated throttling.
+  - Pydantic-AI schema guards + eval harness (-32% hallucinations); Playwright scraper
+    lifted RAG coverage 40% -> 95%.
+  location: Bengaluru, India
+  position: Sr. Fullstack Developer
+  startDate: 2024-04
+- company: Hey Coach
+  endDate: 2024-03
+  highlights:
+  - Grew engineering team 3 -> 14; hiring loops, interview calibration, onboarding
+    for new grads.
+  - 'Owned Agile delivery: sprint planning, code review standards, release management,
+    post-incident reviews.'
+  - 'Kotlin Android app with call-recording: audio capture, foreground service, encryption-at-rest,
+    background upload.'
+  - Kotlin Android SDK wrapping on-device Chroma vector DB for offline semantic search
+    on transcripts.
+  - Salesforce Chrome extension for call recordings + LLM insights inline; AI metric
+    generator (Whisper + LLM, +40% QA efficiency).
+  - Caching strategy scaled product 30 -> 1000+ users; GitHub Actions CI/CD across
+    mobile and backend.
+  location: Bengaluru, India
+  position: Tech Lead
+  startDate: 2023-12
+- company: W Energy
+  endDate: 2023-12
+  highlights:
+  - Led cross-functional team delivering greenfield product on 6-month deadline.
+  - Multi-tenant SaaS field-service product on AWS (Lambda, DynamoDB, Cognito, S3,
+    API Gateway); 5000+ end users.
+  - Cognito auth (federated identities, MFA, RBAC) and GDPR compliance.
+  - Jenkins CI/CD (PowerShell + Git triggers) for automated build, test and deploy.
+  - Task-audits subsystem with append-only event logging; mid-stream logistics app
+    for truckers.
+  location: Bengaluru, India
+  position: Software Engineer
+  startDate: 2021-05
+- company: Sugoi Labs Pvt. Ltd.
+  endDate: 2021-05
+  highlights:
+  - 'Super-Like / Like flows for Rekindle dating app: subscriptions, payment retry/backoff,
+    message integrity.'
+  - Admin panel (React) with embedded support-ticket workflow; backend for survey
+    distribution and coupon delivery.
+  - Security hardening (CSRF, input validation, secure cookies), QA, performance tuning
+    and documentation.
+  location: Bengaluru, India
+  position: Product Development Engineer
+  startDate: 2020-10
+- company: Ted Roo X Technologies
+  endDate: 2020-10
+  highlights:
+  - 3D product-visualisation for apparel customisation (fabric selection, zoom/rotate,
+    live colour preview).
+  - Order placement, cart and profile backed by Rails-style REST API; improved conversion
+    via fewer checkout steps.
+  location: Bengaluru, India
+  position: Full Stack Developer
+  startDate: 2020-01
+- company: Cue Math
+  endDate: 2019-12
+  highlights:
+  - Python GUI tool automating WhatsApp messaging and internal-tool updates across
+    5 cities.
+  - Partnered with platform team on production escalations; reproduced issues and
+    shipped fixes end-to-end.
+  location: Bengaluru, India
+  position: Software Engineer Intern
+  startDate: 2019-06
+work_authorization:
+  authorized_to_work_in:
+  - India
+  citizenship: ''
+  country_of_residence: India
+  requires_sponsorship: null
+  visa_status: ''
