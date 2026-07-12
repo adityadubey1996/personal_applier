@@ -26,7 +26,13 @@ from typing import Any, Callable, Optional
 # stuck Actor trips them. (Spec §6: reuse browser-use's loop counter, don't reinvent.)
 _STALL_FAILS = 4      # consecutive failed actions (browser-use ends the run at max_failures=5)
 _STALL_REPS = 8       # ActionLoopDetector.max_repetition_count — clearly looping
-_DATA_DIR = (os.getenv("STEEL_BROWSER_DATA_MOUNT") or "/app/data").rstrip("/")
+_V5_ROOT = Path(__file__).resolve().parents[1]
+_DEFAULT_DATA = _V5_ROOT / "data"
+_DATA_DIR = (
+    os.getenv("DATA_DIR")
+    or os.getenv("STEEL_BROWSER_DATA_MOUNT")
+    or str(_DEFAULT_DATA)
+).rstrip("/")
 _ANOMALY_PATH = Path(_DATA_DIR) / "anomalies.jsonl"
 
 # ---------------------------------------------------------------------------

@@ -1,27 +1,17 @@
-# Backend V5 (Phase 0)
+# Backend V5
 
-Minimal backend to validate the V5 flow:
+See **[../README.md](../README.md)** for the full standalone run guide.
 
-- Create/release a Steel browser session
-- Run one browser-use instruction at a time
-- Stream logs/audit events to the UI
-- Provide iframe URL for live browser visibility
-
-## Run
+## Run (after `./setup.sh`)
 
 ```bash
 cd v5/backend
-python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn app:app --reload --port 8011
+uvicorn app:app --reload --host 127.0.0.1 --port 8011
 ```
 
-Then open `http://127.0.0.1:8011/`.
+SDK lives at `../sdk/steel_agent/` (vendored copy, no pip package).
 
 ## Environment
 
-Copy `.env.example` to `.env` and set at least:
-
-- `GROQ_API_KEY` (or switch provider to Google and set `GOOGLE_API_KEY`)
-- Steel host URLs if different from local defaults
+`.env` at **v5 root** (preferred) or `backend/.env` for overrides.

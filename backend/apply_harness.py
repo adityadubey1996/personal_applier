@@ -22,10 +22,14 @@ from typing import Any, Callable, Optional
 
 import yaml
 
-ROOT = Path(__file__).resolve().parents[2]
+V5_ROOT = Path(__file__).resolve().parents[1]
 APP_DIR = Path(__file__).resolve().parent
 PROFILE_PATH = APP_DIR / "profile.yaml"
-RESUME_PATH = (os.getenv("STEEL_BROWSER_DATA_MOUNT") or "/app/data").rstrip("/") + "/resume.pdf"
+_DEFAULT_DATA = V5_ROOT / "data"
+RESUME_PATH = str(
+    Path(os.getenv("DATA_DIR") or os.getenv("STEEL_BROWSER_DATA_MOUNT") or _DEFAULT_DATA)
+    / "resume.pdf"
+)
 
 LogFn = Callable[..., None]
 

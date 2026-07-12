@@ -1,0 +1,30 @@
+# V5 standalone — Steel Browser only. Run backend + frontend on the host from this folder.
+name: ${COMPOSE_PROJECT_NAME:-v5-applier}
+
+services:
+  steel-api:
+    image: ghcr.io/steel-dev/steel-browser:latest
+    pull_policy: if_not_present
+    restart: unless-stopped
+    init: true
+    environment:
+      DOMAIN: "${STEEL_PUBLIC_HOST:-127.0.0.1}:${STEEL_API_PORT:-3000}"
+      CDP_DOMAIN: "${STEEL_PUBLIC_HOST:-127.0.0.1}:${STEEL_CDP_PORT:-9223}"
+    ports:
+      - "${STEEL_API_PORT:-3000}:3000"
+      - "${STEEL_CDP_PORT:-9223}:9223"
+    volumes:
+      - ./.cache:/app/.cache
+      - ./data:/app/data:ro
+    networks:
+      - steel-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+networks:
+  steel-net:
+    driver: bridge

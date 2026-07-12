@@ -21,8 +21,8 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from sse_starlette.sse import EventSourceResponse
 
-ROOT = Path(__file__).resolve().parents[2]
-SDK_DIR = ROOT / "sdk"
+V5_ROOT = Path(__file__).resolve().parents[1]
+SDK_DIR = V5_ROOT / "sdk"
 if str(SDK_DIR) not in sys.path:
     sys.path.append(str(SDK_DIR))
 
@@ -67,7 +67,7 @@ if not hlog.handlers:
 
 app = FastAPI(title="Workbench V5")
 
-_DIST = ROOT / "v5" / "frontend" / "dist"
+_DIST = V5_ROOT / "frontend" / "dist"
 if _DIST.exists():
     app.mount("/assets", StaticFiles(directory=str(_DIST / "assets")), name="assets")
 
@@ -80,8 +80,8 @@ def _utc_now() -> str:
 
 
 def _load_env() -> None:
+    load_dotenv(V5_ROOT / ".env", override=False)
     load_dotenv(Path(__file__).resolve().parent / ".env", override=False)
-    load_dotenv(ROOT / ".env", override=False)
 
 
 _load_env()
@@ -1018,7 +1018,7 @@ async def ui() -> FileResponse:
     dist_html = _DIST / "index.html"
     if dist_html.exists():
         return FileResponse(str(dist_html))
-    return FileResponse(str(ROOT / "v5" / "frontend" / "index.html"))
+    return FileResponse(str(V5_ROOT / "frontend" / "index.html"))
 
 
 @app.on_event("shutdown")
